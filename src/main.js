@@ -1,5 +1,6 @@
 import './style.css'
 
+const BASE = import.meta.env.BASE_URL;
 const canvas = document.getElementById('stage');
 const ctx = canvas.getContext('2d');
 
@@ -10,14 +11,14 @@ const GROUND_Y = 900;
 
 // Asset Paths
 const ASSETS = {
-  bg: '/background.jpg',
-  shop: '/shop.jpg',
-  girl_stand: '/girl_stand.png',
-  girl_surprise: '/girl_surprise.png',
-  boy_walk1: '/boy_walk1.jpg',
-  boy_walk2: '/boy_walk2.jpg',
-  boy_kneel: '/boy_kneel.png',
-  hug: '/hug.jpg'
+  bg: BASE + 'background.jpg',
+  shop: BASE + 'shop.jpg',
+  girl_stand: BASE + 'girl_stand.png',
+  girl_surprise: BASE + 'girl_surprise.png',
+  boy_walk1: BASE + 'boy_walk1.jpg',
+  boy_walk2: BASE + 'boy_walk2.jpg',
+  boy_kneel: BASE + 'boy_kneel.png',
+  hug: BASE + 'hug.jpg'
 };
 
 // Colors for text
